@@ -40,7 +40,7 @@ const HashtagGiftsSection = () => {
           </motion.div>
 
           <motion.h2 
-            className="font-display italic text-gold mb-4 text-[48px]"
+            className="font-display italic text-foreground mb-4 text-[48px]"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.8 }}
@@ -70,7 +70,7 @@ const HashtagGiftsSection = () => {
               whileHover={{ scale: 1.05 }}
             >
               <p 
-                className="text-xl md:text-2xl font-display font-semibold text-primary"
+                className="text-xl md:text-2xl font-display font-semibold text-foreground"
                 data-testid="text-hashtag-1"
               >
                 #NaniniwalaNaAkoSaForeBELLE
@@ -84,7 +84,7 @@ const HashtagGiftsSection = () => {
               whileHover={{ scale: 1.05 }}
             >
               <p 
-                className="text-xl md:text-2xl font-display font-semibold text-primary"
+                className="text-xl md:text-2xl font-display font-semibold text-foreground"
                 data-testid="text-hashtag-2"
               >
                 #SimulaNgMIKElalaKita
@@ -98,7 +98,7 @@ const HashtagGiftsSection = () => {
               whileHover={{ scale: 1.05 }}
             >
               <p 
-                className="text-xl md:text-2xl font-display font-semibold text-primary"
+                className="text-xl md:text-2xl font-display font-semibold text-foreground"
                 data-testid="text-hashtag-3"
               >
                 #MIKEfoundhisforeBELLE
@@ -126,7 +126,7 @@ const HashtagGiftsSection = () => {
           </motion.div>
 
           <motion.h2 
-            className="font-display italic text-gold mb-6 text-[48px]"
+            className="font-display italic text-foreground mb-6 text-[48px]"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 1.0 }}

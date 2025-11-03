@@ -55,7 +55,7 @@ const VideoSection = () => {
       transition={{ duration: 1, delay: 4.5 }}
     >
       <div className="max-w-4xl mx-auto px-4">
-        <h2 className="text-3xl font-display mb-8 text-center text-primary" data-testid="text-video-title">
+        <h2 className="text-3xl font-display mb-8 text-center text-foreground" data-testid="text-video-title">
           Save the Date Video
         </h2>
       </div>

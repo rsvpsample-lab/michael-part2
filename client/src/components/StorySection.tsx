@@ -282,7 +282,7 @@ const StorySection = () => {
               </svg>
 
               <div className="relative z-10 space-y-6 sm:space-y-8">
-                <h3 className="text-4xl sm:text-5xl md:text-6xl font-script italic font-black mb-6 sm:mb-8 text-primary" data-testid="text-story-vow-title">
+                <h3 className="text-4xl sm:text-5xl md:text-6xl font-script italic font-black mb-6 sm:mb-8 text-foreground" data-testid="text-story-vow-title">
                   Our Promise
                 </h3>
                 

@@ -19,7 +19,7 @@ const Footer = () => {
         >
           {/* Couple Names */}
           <div>
-            <h2 className="text-3xl sm:text-4xl mb-2 text-primary" style={{ fontFamily: 'Boska, serif', fontWeight: 300 }}>
+            <h2 className="text-3xl sm:text-4xl mb-2 text-foreground" style={{ fontFamily: 'Boska, serif', fontWeight: 300 }}>
               John Michael
               <span className="text-foreground mx-3">&</span>
               Cybelle
@@ -48,7 +48,7 @@ const Footer = () => {
             <p className="text-foreground/80 text-sm">
               With love and gratitude,
             </p>
-            <p className="text-primary" style={{ fontFamily: 'Boska, serif', fontWeight: 300 }}>
+            <p className="text-foreground" style={{ fontFamily: 'Boska, serif', fontWeight: 300 }}>
               John Michael & Cybelle
             </p>
           </div>

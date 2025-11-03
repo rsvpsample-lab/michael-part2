@@ -87,14 +87,14 @@ const EntourageSection = () => {
           {/* Best Men and Matrons of Honor */}
           <div className="grid grid-cols-2 gap-4 md:gap-8 mb-8">
             <div>
-              <h4 className="text-sm md:text-md font-semibold text-primary mb-4">Best Men</h4>
+              <h4 className="text-sm md:text-md font-semibold text-foreground mb-4">Best Men</h4>
               <div className="space-y-1 md:space-y-2">
                 <p className="text-foreground/90 text-xs md:text-sm">Julius Milo</p>
                 <p className="text-foreground/90 text-xs md:text-sm">Armando Espinoza, Jr.</p>
               </div>
             </div>
             <div>
-              <h4 className="text-sm md:text-md font-semibold text-primary mb-4">Matrons of Honor</h4>
+              <h4 className="text-sm md:text-md font-semibold text-foreground mb-4">Matrons of Honor</h4>
               <div className="space-y-1 md:space-y-2">
                 <p className="text-foreground/90 text-xs md:text-sm">Jacklyn Raymundo</p>
                 <p className="text-foreground/90 text-xs md:text-sm">Jenine Espinoza</p>
@@ -104,24 +104,24 @@ const EntourageSection = () => {
 
           {/* Secondary Sponsors */}
           <div className="mb-8">
-            <h3 className="text-xl md:text-2xl font-display italic text-primary mb-6">Secondary Sponsors</h3>
+            <h3 className="text-xl md:text-2xl font-display italic text-foreground mb-6">Secondary Sponsors</h3>
             <div className="grid grid-cols-3 gap-2 md:gap-8">
               <div>
-                <h4 className="text-sm md:text-md font-semibold text-primary mb-2 md:mb-4">Veil</h4>
+                <h4 className="text-sm md:text-md font-semibold text-foreground mb-2 md:mb-4">Veil</h4>
                 <div className="space-y-1 md:space-y-2">
                   <p className="text-foreground/90 text-xs md:text-sm">John Paul Ignacio</p>
                   <p className="text-foreground/90 text-xs md:text-sm">Shila May Santilles</p>
                 </div>
               </div>
               <div>
-                <h4 className="text-sm md:text-md font-semibold text-primary mb-2 md:mb-4">Candle</h4>
+                <h4 className="text-sm md:text-md font-semibold text-foreground mb-2 md:mb-4">Candle</h4>
                 <div className="space-y-1 md:space-y-2">
                   <p className="text-foreground/90 text-xs md:text-sm">Jeffrey Pesinable</p>
                   <p className="text-foreground/90 text-xs md:text-sm">Nikka Cruz</p>
                 </div>
               </div>
               <div>
-                <h4 className="text-sm md:text-md font-semibold text-primary mb-2 md:mb-4">Cord</h4>
+                <h4 className="text-sm md:text-md font-semibold text-foreground mb-2 md:mb-4">Cord</h4>
                 <div className="space-y-1 md:space-y-2">
                   <p className="text-foreground/90 text-xs md:text-sm">Darwin Batain</p>
                   <p className="text-foreground/90 text-xs md:text-sm">Christine Jireh Emperador</p>
@@ -133,7 +133,7 @@ const EntourageSection = () => {
           {/* Bridesmaids and Groomsmen */}
           <div className="grid grid-cols-2 gap-4 md:gap-8 mb-8">
             <div>
-              <h4 className="text-sm md:text-md font-semibold text-primary mb-4">Bridesmaids</h4>
+              <h4 className="text-sm md:text-md font-semibold text-foreground mb-4">Bridesmaids</h4>
               <div className="space-y-1 md:space-y-2">
                 <p className="text-foreground/90 text-xs md:text-sm">Joana Rose Villaceran</p>
                 <p className="text-foreground/90 text-xs md:text-sm">Kimbie Cedro</p>
@@ -146,7 +146,7 @@ const EntourageSection = () => {
               </div>
             </div>
             <div>
-              <h4 className="text-sm md:text-md font-semibold text-primary mb-4">Groomsmen</h4>
+              <h4 className="text-sm md:text-md font-semibold text-foreground mb-4">Groomsmen</h4>
               <div className="space-y-1 md:space-y-2">
                 <p className="text-foreground/90 text-xs md:text-sm">John Carlo Villaceran</p>
                 <p className="text-foreground/90 text-xs md:text-sm">John Cristopher Ignacio</p>
@@ -163,7 +163,7 @@ const EntourageSection = () => {
           {/* Junior Attendants */}
           <div className="grid grid-cols-2 gap-4 md:gap-8 mb-8">
             <div>
-              <h4 className="text-sm md:text-md font-semibold text-primary mb-4">Jr. Groomsmen</h4>
+              <h4 className="text-sm md:text-md font-semibold text-foreground mb-4">Jr. Groomsmen</h4>
               <div className="space-y-1 md:space-y-2">
                 <p className="text-foreground/90 text-xs md:text-sm">James Alexander Deza</p>
                 <p className="text-foreground/90 text-xs md:text-sm">Flavio Deza, III</p>
@@ -171,7 +171,7 @@ const EntourageSection = () => {
               </div>
             </div>
             <div>
-              <h4 className="text-sm md:text-md font-semibold text-primary mb-4">Jr. Bridesmaids</h4>
+              <h4 className="text-sm md:text-md font-semibold text-foreground mb-4">Jr. Bridesmaids</h4>
               <div className="space-y-1 md:space-y-2">
                 <p className="text-foreground/90 text-xs md:text-sm">Kristine Bernadette Deza</p>
                 <p className="text-foreground/90 text-xs md:text-sm">Ashley Joy Castro</p>
@@ -183,17 +183,17 @@ const EntourageSection = () => {
           {/* Other Special Roles */}
           <div className="space-y-6">
             <div>
-              <h4 className="text-sm md:text-md font-semibold text-primary mb-4">Special Roles</h4>
+              <h4 className="text-sm md:text-md font-semibold text-foreground mb-4">Special Roles</h4>
               <div className="grid grid-cols-2 gap-2 md:gap-4">
-                <p className="text-foreground/90 text-xs md:text-sm"><span className="text-primary font-medium">Coin Bearer:</span> Sam Gabriel Castro</p>
-                <p className="text-foreground/90 text-xs md:text-sm"><span className="text-primary font-medium">Bible Bearer:</span> Jeremy Morito</p>
-                <p className="text-foreground/90 text-xs md:text-sm"><span className="text-primary font-medium">Ring Bearer:</span> Ashton Craig Espinoza</p>
-                <p className="text-foreground/90 text-xs md:text-sm"><span className="text-primary font-medium">Banner Bearer:</span> Marissa Deza</p>
+                <p className="text-foreground/90 text-xs md:text-sm"><span className="text-foreground font-medium">Coin Bearer:</span> Sam Gabriel Castro</p>
+                <p className="text-foreground/90 text-xs md:text-sm"><span className="text-foreground font-medium">Bible Bearer:</span> Jeremy Morito</p>
+                <p className="text-foreground/90 text-xs md:text-sm"><span className="text-foreground font-medium">Ring Bearer:</span> Ashton Craig Espinoza</p>
+                <p className="text-foreground/90 text-xs md:text-sm"><span className="text-foreground font-medium">Banner Bearer:</span> Marissa Deza</p>
               </div>
             </div>
             
             <div>
-              <h4 className="text-sm md:text-md font-semibold text-primary mb-4">Flower Girls</h4>
+              <h4 className="text-sm md:text-md font-semibold text-foreground mb-4">Flower Girls</h4>
               <div className="grid grid-cols-2 gap-2 md:gap-4">
                 <p className="text-foreground/90 text-xs md:text-sm">LJ Deza</p>
                 <p className="text-foreground/90 text-xs md:text-sm">Lorraine Deza</p>

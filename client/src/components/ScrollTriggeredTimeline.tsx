@@ -68,7 +68,7 @@ const TimelineCard: React.FC<TimelineCardProps> = ({ timelineEvent, i }) => {
                         </div>
                         
                         <div className="flex-1 min-w-0">
-                            <div className="text-xs md:text-sm font-bold text-primary mb-1">
+                            <div className="text-xs md:text-sm font-bold text-foreground mb-1">
                                 {timelineEvent.time}
                             </div>
                             <h3 className="text-base md:text-lg font-serif font-semibold text-foreground mb-2">
@@ -195,7 +195,7 @@ export default function ScrollTriggeredTimeline() {
                     viewport={{ once: true, amount: 0.3 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
                 >
-                    <h2 className="text-4xl md:text-5xl font-serif italic mb-4 text-primary" data-testid="text-timeline-title">
+                    <h2 className="text-4xl md:text-5xl font-serif italic mb-4 text-foreground" data-testid="text-timeline-title">
                         Our Wedding Day
                     </h2>
                     <p className="text-foreground/90 max-w-2xl mx-auto">

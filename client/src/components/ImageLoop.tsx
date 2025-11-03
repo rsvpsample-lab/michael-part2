@@ -7,7 +7,7 @@ const ImageLoop = () => {
     <section id="slideshow" className="section-hard-blue w-full overflow-hidden py-16">
       <div className="text-loop-container flex items-center justify-center">
         <div className={`${animationsEnabled ? 'text-loop-track' : 'text-loop-track-static'}`}>
-          <h2 className="text-loop-text font-display text-6xl md:text-8xl lg:text-9xl text-gold-bright font-light tracking-wide" data-testid="text-loop-invited">
+          <h2 className="text-loop-text font-display text-6xl md:text-8xl lg:text-9xl text-foreground font-light tracking-wide" data-testid="text-loop-invited">
             You're Invited • You're Invited • You're Invited • You're Invited • You're Invited • You're Invited • 
           </h2>
         </div>
