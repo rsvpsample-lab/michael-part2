@@ -7,7 +7,7 @@ import { Heart, Gem, Church } from 'lucide-react';
 // Story images
 import storyImage1 from '@assets/1_1762162987199.JPG';
 import storyImage2 from '@assets/2_1762162987197.JPG';
-import storyImage3 from '@assets/3_1762162987198.JPG';
+import storyImage3 from '@assets/3 (1)_1762183327715.JPG';
 
 // Register GSAP plugin
 gsap.registerPlugin(ScrollTrigger);
