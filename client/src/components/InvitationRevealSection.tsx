@@ -44,28 +44,6 @@ const InvitationRevealSection = () => {
             transition={{ duration: 0.5 }}
             className="z-20 flex flex-col items-center gap-3"
           >
-            {/* Moving Arrow on Top */}
-            <motion.div
-              onClick={handleOpenInvitation}
-              className="cursor-pointer flex flex-col items-center gap-2"
-              animate={animationsEnabled ? {
-                y: [0, -10, 0],
-              } : {}}
-              transition={{
-                duration: 1.5,
-                repeat: Infinity,
-                ease: "easeInOut"
-              }}
-            >
-              <ChevronDown 
-                className="w-8 h-8 md:w-10 md:h-10 text-[#4A4139] drop-shadow-lg rotate-180" 
-                strokeWidth={3}
-              />
-              <p className="text-[#4A4139] text-sm md:text-base font-medium" style={{ fontFamily: 'Satoshi, sans-serif' }}>
-                click it
-              </p>
-            </motion.div>
-
             <Button
               onClick={handleOpenInvitation}
               className="bg-gradient-to-r from-[#E8D7C3] to-[#D9C8B8] hover:from-[#D9C8B8] hover:to-[#E8D7C3] text-[#0c111d] text-xl md:text-2xl px-12 py-8 rounded-lg shadow-2xl transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(217,200,184,0.5)] font-bold"
@@ -74,6 +52,28 @@ const InvitationRevealSection = () => {
             >
               Know Us?
             </Button>
+
+            {/* Moving Arrow Below */}
+            <motion.div
+              onClick={handleOpenInvitation}
+              className="cursor-pointer flex flex-col items-center gap-2"
+              animate={animationsEnabled ? {
+                y: [0, 10, 0],
+              } : {}}
+              transition={{
+                duration: 1.5,
+                repeat: Infinity,
+                ease: "easeInOut"
+              }}
+            >
+              <p className="text-[#4A4139] text-sm md:text-base font-medium" style={{ fontFamily: 'Satoshi, sans-serif' }}>
+                click it
+              </p>
+              <ChevronDown 
+                className="w-8 h-8 md:w-10 md:h-10 text-[#4A4139] drop-shadow-lg" 
+                strokeWidth={3}
+              />
+            </motion.div>
           </motion.div>
         )}
 
