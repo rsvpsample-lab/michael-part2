@@ -32,7 +32,7 @@ const InvitationRevealSection = () => {
       initial={animationsEnabled ? { opacity: 0 } : { opacity: 1 }}
       animate={{ opacity: 1 }}
       transition={animationsEnabled ? { duration: 1, delay: 2.5 } : { duration: 0 }}
-      data-testid="section-invitation-reveal"
+      data-testid="section-section-invitation-reveal"
     >
       <div className="relative flex min-h-screen w-full items-center justify-center">
         {/* Know Us Button */}
@@ -65,14 +65,14 @@ const InvitationRevealSection = () => {
                 click it
               </p>
             </motion.div>
-            
+
             <Button
               onClick={handleOpenInvitation}
               className="bg-gradient-to-r from-[#E8D7C3] to-[#D9C8B8] hover:from-[#D9C8B8] hover:to-[#E8D7C3] text-[#0c111d] text-xl md:text-2xl px-12 py-8 rounded-lg shadow-2xl transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(217,200,184,0.5)] font-bold"
               style={{ fontFamily: 'Boska, serif' }}
               data-testid="button-open-invitation"
             >
-              Know Us
+              Know Us?
             </Button>
           </motion.div>
         )}
