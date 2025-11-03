@@ -8,7 +8,7 @@ const SaveTheDateSection = () => {
   return (
     <motion.section 
       id="save-the-date" 
-      className="section-pastel-blue py-20 px-4 relative overflow-hidden"
+      className="section-pastel-blue py-20 relative overflow-hidden"
       initial={animationsEnabled ? { opacity: 0 } : { opacity: 1 }}
       animate={{ opacity: 1 }}
       transition={animationsEnabled ? { duration: 1, delay: 0.3 } : { duration: 0 }}
@@ -19,10 +19,10 @@ const SaveTheDateSection = () => {
         <div className="absolute bottom-1/4 right-1/4 w-48 h-48 border border-primary/30 rounded-full"></div>
       </div>
 
-      <div className="max-w-6xl mx-auto relative z-10">
-        {/* Section Header */}
+      {/* Section Header - Centered with max-width */}
+      <div className="max-w-6xl mx-auto px-4 relative z-10 mb-12">
         <motion.div 
-          className="text-center mb-12 relative"
+          className="text-center relative"
           initial={animationsEnabled ? { opacity: 0, y: 30 } : { opacity: 1, y: 0 }}
           animate={{ opacity: 1, y: 0 }}
           transition={animationsEnabled ? { duration: 0.8, ease: "easeOut", delay: 0.5 } : { duration: 0 }}
@@ -51,32 +51,38 @@ const SaveTheDateSection = () => {
             Relive the moment we shared our special announcement with the world
           </p>
         </motion.div>
+      </div>
 
-        {/* Video Container */}
-        <motion.div 
-          className="relative"
-          initial={animationsEnabled ? { opacity: 0, y: 30 } : { opacity: 1, y: 0 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={animationsEnabled ? { duration: 0.8, ease: "easeOut", delay: 0.8 } : { duration: 0 }}
-        >
-          <div className="relative w-full rounded-2xl overflow-hidden shadow-2xl bg-card/30 border border-border">
-            {/* Video Aspect Ratio Container */}
-            <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
-              <iframe
-                className="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/HUthbEOwNHc?si=S_FkuTUhsOsZU60X"
-                title="Save The Date Video"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                data-testid="iframe-save-the-date-video"
-              ></iframe>
-            </div>
-          </div>
-        </motion.div>
+      {/* Full Width Video Container - Like CoverSection */}
+      <motion.div 
+        className="relative w-screen left-1/2 -translate-x-1/2 overflow-hidden"
+        initial={animationsEnabled ? { opacity: 0, y: 30 } : { opacity: 1, y: 0 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={animationsEnabled ? { duration: 0.8, ease: "easeOut", delay: 0.8 } : { duration: 0 }}
+      >
+        {/* Video Aspect Ratio Container */}
+        <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+          <iframe
+            className="absolute top-0 left-0 w-full h-full"
+            src="https://www.youtube.com/embed/HUthbEOwNHc?si=S_FkuTUhsOsZU60X"
+            title="Save The Date Video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            data-testid="iframe-save-the-date-video"
+            style={{
+              display: 'block',
+              border: 'none',
+              margin: 0,
+              padding: 0
+            }}
+          ></iframe>
+        </div>
+      </motion.div>
 
-        {/* Additional Message */}
+      {/* Additional Message - Centered with max-width */}
+      <div className="max-w-6xl mx-auto px-4 relative z-10 mt-12">
         <motion.div 
-          className="text-center mt-12"
+          className="text-center"
           initial={animationsEnabled ? { opacity: 0, y: 20 } : { opacity: 1, y: 0 }}
           animate={{ opacity: 1, y: 0 }}
           transition={animationsEnabled ? { duration: 0.8, ease: "easeOut", delay: 1.1 } : { duration: 0 }}
