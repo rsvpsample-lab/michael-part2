@@ -45,7 +45,7 @@ const MusicConsentPopup = ({ onConsent, isVisible }: MusicConsentPopupProps) => 
               </motion.div>
               
               <div className="space-y-3">
-                <h2 className="text-3xl md:text-4xl font-bold text-primary font-display">
+                <h2 className="text-3xl md:text-4xl font-bold text-foreground font-display">
                   Enhanced Experience
                 </h2>
                 <p className="text-foreground/90 leading-relaxed text-base md:text-lg">

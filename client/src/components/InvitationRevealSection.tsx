@@ -4,6 +4,7 @@ import { useAnimationContext } from '@/contexts/AnimationContext';
 import EnvelopeAnimation from './EnvelopeAnimation';
 import QuizGame from './QuizGame';
 import { Button } from '@/components/ui/button';
+import { ChevronDown } from 'lucide-react';
 
 const InvitationRevealSection = () => {
   const { animationsEnabled } = useAnimationContext();
@@ -34,14 +35,14 @@ const InvitationRevealSection = () => {
       data-testid="section-invitation-reveal"
     >
       <div className="relative flex min-h-screen w-full items-center justify-center">
-        {/* Open Invitation Button */}
+        {/* Know Us Button */}
         {showButton && (
           <motion.div
             initial={animationsEnabled ? { opacity: 0, scale: 0.8 } : { opacity: 1, scale: 1 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.8 }}
             transition={{ duration: 0.5 }}
-            className="z-20"
+            className="z-20 flex flex-col items-center gap-6"
           >
             <Button
               onClick={handleOpenInvitation}
@@ -49,8 +50,27 @@ const InvitationRevealSection = () => {
               style={{ fontFamily: 'Boska, serif' }}
               data-testid="button-open-invitation"
             >
-              Open Invitation
+              Know Us
             </Button>
+            
+            {/* Moving Arrow */}
+            <motion.div
+              onClick={handleOpenInvitation}
+              className="cursor-pointer"
+              animate={animationsEnabled ? {
+                y: [0, 10, 0],
+              } : {}}
+              transition={{
+                duration: 1.5,
+                repeat: Infinity,
+                ease: "easeInOut"
+              }}
+            >
+              <ChevronDown 
+                className="w-8 h-8 md:w-10 md:h-10 text-[#E8D7C3] drop-shadow-lg" 
+                strokeWidth={3}
+              />
+            </motion.div>
           </motion.div>
         )}
 
