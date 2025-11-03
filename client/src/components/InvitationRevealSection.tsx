@@ -4,7 +4,7 @@ import { useAnimationContext } from '@/contexts/AnimationContext';
 import EnvelopeAnimation from './EnvelopeAnimation';
 import QuizGame from './QuizGame';
 import { Button } from '@/components/ui/button';
-import { ChevronDown } from 'lucide-react';
+import { ChevronUp } from 'lucide-react';
 
 const InvitationRevealSection = () => {
   const { animationsEnabled } = useAnimationContext();
@@ -58,7 +58,7 @@ const InvitationRevealSection = () => {
               onClick={handleOpenInvitation}
               className="cursor-pointer flex flex-col items-center gap-2"
               animate={animationsEnabled ? {
-                y: [0, 10, 0],
+                y: [0, -10, 0],
               } : {}}
               transition={{
                 duration: 1.5,
@@ -66,13 +66,13 @@ const InvitationRevealSection = () => {
                 ease: "easeInOut"
               }}
             >
-              <p className="text-[#4A4139] text-sm md:text-base font-medium" style={{ fontFamily: 'Satoshi, sans-serif' }}>
-                click it
-              </p>
-              <ChevronDown 
+              <ChevronUp 
                 className="w-8 h-8 md:w-10 md:h-10 text-[#4A4139] drop-shadow-lg" 
                 strokeWidth={3}
               />
+              <p className="text-[#4A4139] text-sm md:text-base font-medium" style={{ fontFamily: 'Satoshi, sans-serif' }}>
+                click it
+              </p>
             </motion.div>
           </motion.div>
         )}
