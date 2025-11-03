@@ -20,6 +20,7 @@ import Footer from '@/components/Footer';
 import CoverSection from '@/components/CoverSection';
 import InvitationRevealSection from '@/components/InvitationRevealSection';
 import MusicControl from '@/components/MusicControl';
+import SaveTheDateSection from '@/components/SaveTheDateSection';
 import { AnimationContext } from '@/contexts/AnimationContext';
 
 const Index = () => {
@@ -116,6 +117,7 @@ const Index = () => {
           />
           <DressCodeSection />
           <HashtagGiftsSection />
+          <SaveTheDateSection />
           <MemorableMomentsSection />
           <RSVPSection />
           <EntourageSection />
