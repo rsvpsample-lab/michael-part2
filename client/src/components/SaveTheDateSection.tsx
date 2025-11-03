@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useAnimationContext } from '@/contexts/AnimationContext';
-import { Play, Heart } from 'lucide-react';
+import { Heart } from 'lucide-react';
 
 const SaveTheDateSection = () => {
   const { animationsEnabled } = useAnimationContext();
@@ -59,7 +59,7 @@ const SaveTheDateSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={animationsEnabled ? { duration: 0.8, ease: "easeOut", delay: 0.8 } : { duration: 0 }}
         >
-          <div className="relative w-full max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-2xl bg-card/30 border border-border">
+          <div className="relative w-full rounded-2xl overflow-hidden shadow-2xl bg-card/30 border border-border">
             {/* Video Aspect Ratio Container */}
             <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
               <iframe
@@ -72,16 +72,6 @@ const SaveTheDateSection = () => {
               ></iframe>
             </div>
           </div>
-
-          {/* Decorative Play Icon Overlay (appears before playing) */}
-          <motion.div
-            className="absolute -bottom-6 -right-6 w-20 h-20 bg-gradient-to-br from-primary to-primary/80 rounded-full flex items-center justify-center shadow-lg opacity-80"
-            initial={animationsEnabled ? { scale: 0, rotate: -180 } : { scale: 1, rotate: 0 }}
-            animate={{ scale: 1, rotate: 0 }}
-            transition={animationsEnabled ? { duration: 0.6, delay: 1.2, type: "spring" } : { duration: 0 }}
-          >
-            <Play className="w-8 h-8 text-white ml-1" data-testid="icon-play-decorative" />
-          </motion.div>
         </motion.div>
 
         {/* Additional Message */}
