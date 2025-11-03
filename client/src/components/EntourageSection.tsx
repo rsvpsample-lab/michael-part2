@@ -17,7 +17,7 @@ const EntourageSection = () => {
       
       <div className="max-w-4xl mx-auto text-center relative z-10">
         <motion.h2 
-          className="text-4xl md:text-5xl lg:text-6xl font-display italic text-primary mb-12"
+          className="text-4xl md:text-5xl lg:text-6xl font-display italic text-foreground mb-12"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.5 }}
@@ -35,12 +35,12 @@ const EntourageSection = () => {
           {/* Parents Section */}
           <div className="grid grid-cols-2 gap-4 md:gap-8 mb-8">
             <div>
-              <h3 className="text-sm md:text-lg font-semibold text-primary mb-3">Parents of the Groom</h3>
+              <h3 className="text-sm md:text-lg font-semibold text-foreground mb-3">Parents of the Groom</h3>
               <p className="text-foreground/90 text-xs md:text-sm">Mr. Gesmundo Ignacio</p>
               <p className="text-foreground/90 text-xs md:text-sm">Mrs. Rosalia Ignacio</p>
             </div>
             <div>
-              <h3 className="text-sm md:text-lg font-semibold text-primary mb-3">Parents of the Bride</h3>
+              <h3 className="text-sm md:text-lg font-semibold text-foreground mb-3">Parents of the Bride</h3>
               <p className="text-foreground/90 text-xs md:text-sm">Mr. Flavio Deza, Jr.</p>
               <p className="text-foreground/90 text-xs md:text-sm">Mrs. Marieliza Deza</p>
             </div>
@@ -48,10 +48,10 @@ const EntourageSection = () => {
 
           {/* Principal Sponsors */}
           <div className="mb-8">
-            <h3 className="text-xl md:text-2xl font-display italic text-primary mb-6">Principal Sponsors</h3>
+            <h3 className="text-xl md:text-2xl font-display italic text-foreground mb-6">Principal Sponsors</h3>
             <div className="grid grid-cols-2 gap-4 md:gap-8">
               <div>
-                <h4 className="text-sm md:text-md font-semibold text-primary mb-4">NINONG</h4>
+                <h4 className="text-sm md:text-md font-semibold text-foreground mb-4">NINONG</h4>
                 <div className="space-y-1 md:space-y-2">
                   <p className="text-foreground/90 text-xs md:text-sm">Mr. Antonio Ramos</p>
                   <p className="text-foreground/90 text-xs md:text-sm">Mr. Pedro Morito</p>
@@ -66,7 +66,7 @@ const EntourageSection = () => {
                 </div>
               </div>
               <div>
-                <h4 className="text-sm md:text-md font-semibold text-primary mb-4">NINANG</h4>
+                <h4 className="text-sm md:text-md font-semibold text-foreground mb-4">NINANG</h4>
                 <div className="space-y-1 md:space-y-2">
                   <p className="text-foreground/90 text-xs md:text-sm">Mrs. Josephine Ramos</p>
                   <p className="text-foreground/90 text-xs md:text-sm">Mrs. Roselle Morito</p>
