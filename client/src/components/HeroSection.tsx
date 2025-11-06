@@ -87,22 +87,16 @@ const HeroSection = () => {
             </div>
           </div>
           
-          {/* RSVP Button */}
-          <div className={`transition-all duration-700 opacity-100 mt-[10px] mb-[10px] ${animationsEnabled ? 'animate-fade-scale' : ''}`}>
-            <a href="#rsvp">
-              <button
-                className="animated-rsvp-btn"
-                aria-label="RSVP to Wedding"
-                data-testid="button-rsvp-hero"
-              >
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span className="bg-[#23252f]"></span>
-                <span>RSVP</span>
-              </button>
-            </a>
+          {/* Scroll Down Indicator */}
+          <div className={`transition-all duration-700 opacity-100 mt-8 ${animationsEnabled ? 'animate-fade-scale' : ''}`}>
+            <div className="flex flex-col items-center">
+              <p className="text-white/70 text-sm tracking-widest mb-2 font-light">SCROLL DOWN</p>
+              <div className="scroll-down-arrow" data-testid="scroll-down-indicator">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 5V19M12 19L5 12M12 19L19 12" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -136,59 +130,22 @@ const HeroSection = () => {
         }
 
 
-        /* Animated RSVP Button */
-        .animated-rsvp-btn {
-          font-family: Arial, Helvetica, sans-serif;
-          font-weight: bold;
-          color: white;
-          background-color: #23252f;
-          padding: 1em 2em;
-          border: none;
-          border-radius: 0;
-          position: relative;
+        /* Scroll Down Indicator Animation */
+        .scroll-down-arrow {
+          animation: bounce 2s infinite;
           cursor: pointer;
-          overflow: hidden;
         }
 
-        .animated-rsvp-btn span:not(:nth-child(6)) {
-          position: absolute;
-          left: 50%;
-          top: 50%;
-          transform: translate(-50%, -50%);
-          height: 30px;
-          width: 30px;
-          background-color: #3d3228;
-          border-radius: 50%;
-          transition: .6s ease;
-        }
-
-        .animated-rsvp-btn span:nth-child(6) {
-          position: relative;
-        }
-
-        .animated-rsvp-btn span:nth-child(1) {
-          transform: translate(-3.3em, -4em);
-        }
-
-        .animated-rsvp-btn span:nth-child(2) {
-          transform: translate(-6em, 1.3em);
-        }
-
-        .animated-rsvp-btn span:nth-child(3) {
-          transform: translate(-.2em, 1.8em);
-        }
-
-        .animated-rsvp-btn span:nth-child(4) {
-          transform: translate(3.5em, 1.4em);
-        }
-
-        .animated-rsvp-btn span:nth-child(5) {
-          transform: translate(3.5em, -3.8em);
-        }
-
-        .animated-rsvp-btn:hover span:not(:nth-child(6)) {
-          transform: translate(-50%, -50%) scale(4);
-          transition: 1.5s ease;
+        @keyframes bounce {
+          0%, 20%, 50%, 80%, 100% {
+            transform: translateY(0);
+          }
+          40% {
+            transform: translateY(-10px);
+          }
+          60% {
+            transform: translateY(-5px);
+          }
         }
 
         /* Custom underscore cursor for TypeAnimation */
